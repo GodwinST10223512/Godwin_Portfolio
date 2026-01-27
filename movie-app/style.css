@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1e1e2e; /* Dark Mode background */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90vw;
+    max-width: 600px;
+    padding: 3em 2em;
+    background-color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr; /* Input takes 9 parts, Button takes 3 */
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    color: #333;
+}
+
+button {
+    background-color: #ff5e57;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* We will inject this HTML later, but we style it now */
+.info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-top: 1.2em;
+    gap: 20px;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #333;
+    margin-bottom: 1.2em;
+}
+
+/* Tags for Genre */
+.genre div {
+    border: 1px solid #8d99ae;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    color: #8d99ae;
+}
