@@ -3,8 +3,7 @@ const movieNameRef = document.getElementById("movie-name");
 const searchBtn = document.getElementById("search-btn");
 const result = document.getElementById("result");
 
-// 2. YOUR API KEY (PASTE IT HERE!)
-// Example: const key = "a1b2c3d4";
+
 const key = "2b88ac6d"; 
 
 // 3. FUNCTION TO FETCH DATA FROM API
@@ -12,7 +11,7 @@ let getMovie = () => {
     let movieName = movieNameRef.value;
     
     // Construct the URL: "Base URL + Name + Key"
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     // If input is empty
     if (movieName.length <= 0) {
